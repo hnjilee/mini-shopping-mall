@@ -13,12 +13,24 @@
   /* Font weight */
   --weight-regular: 400;
   --weight-light: 300;
+
+  /* Size */
+  --size-logo: 12rem;
 }
 
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+}
+
+/* Logo */
+.logo {
+  width: var(--size-logo);
+  height: var(--size-logo);
+  margin: 2em 0;
+  border-radius: 50%;
 }
