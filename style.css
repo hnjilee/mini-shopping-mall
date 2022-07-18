@@ -21,6 +21,8 @@
   --size-logo: 12rem;
   --size-btn: 5rem;
   --size-product: 15rem;
+  --size-arrow-up: 3rem;
+  --position-arrow-up: 3rem;
 
   /* Animation */
   --animation-duration: 300ms;
@@ -156,4 +158,18 @@ ul {
 .product:hover .product__price {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* Arrow-up */
+.arrow-up {
+  position: fixed;
+  bottom: var(--position-arrow-up);
+  right: var(--position-arrow-up);
+  display: inline-block;
+  width: var(--size-arrow-up);
+  height: var(--size-arrow-up);
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  font-size: calc(var(--size-arrow-up) * 3 / 4);
+  color: white;
 }
