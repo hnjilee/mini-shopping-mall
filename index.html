@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A list of products, which is filterable and sortable"
+    />
+    <meta name="author" content="Hyunji Lee" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Mini Shopping Mall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0ce04dd2fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Logo -->
+    <img src="images/logo.png" alt="logo" />
+
+    <!-- Buttons & Select -->
+    <section class="btns-and-select">
+      <!-- Buttons -->
+      <div class="btns">
+        <button class="btn">
+          <img src="images/buttons/all.png" alt="all" class="btn__icon" />
+          <span class="btn__name">all</span>
+        </button>
+        <button class="btn">
+          <img src="images/buttons/top.png" alt="top" class="btn__icon" />
+          <span class="btn__name">top</span>
+        </button>
+        <button class="btn">
+          <img src="images/buttons/bottom.png" alt="bottom" class="btn__icon" />
+          <span class="btn__name">bottom</span>
+        </button>
+        <button class="btn">
+          <img src="images/buttons/shoes.png" alt="shoes" class="btn__icon" />
+          <span class="btn__name">shoes</span>
+        </button>
+        <button class="btn">
+          <img src="images/buttons/bag.png" alt="bag" class="btn__icon" />
+          <span class="btn__name">bag</span>
+        </button>
+      </div>
+      <!-- Select -->
+      <select class="select">
+        <option value="">Sort by</option>
+        <option value="ascending">Price: low to high</option>
+        <option value="descending">Price: high to low</option>
+      </select>
+    </section>
+
+    <!-- Products -->
+    <ul class="products">
+      <li class="product">
+        <img src="images/products/top1.png" alt="top1" class="product__img" />
+        <p class="product__price">29000</p>
+      </li>
+    </ul>
+
+    <!-- Arrow-up -->
+    <button class="arrow-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
