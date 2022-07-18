@@ -3,6 +3,7 @@
   /* Color */
   --color-beige: #fff5e7;
   --color-orange: #edb473;
+  --color-orange-transparent: rgb(237, 180, 115, 0.5);
   --color-black: #5b6574;
 
   /* Font size */
@@ -16,13 +17,23 @@
 
   /* Size */
   --size-border-radius: 8px;
+  --size-letter-spacing: 0.1em;
   --size-logo: 12rem;
   --size-btn: 5rem;
+  --size-product: 15rem;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
   text-align: center;
+  max-width: 62.5rem;
+  margin: auto;
 }
 
 body,
@@ -36,6 +47,11 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Logo */
@@ -71,7 +87,7 @@ button {
   text-transform: uppercase;
   font-size: var(--font-small);
   font-weight: var(--weight-regular);
-  letter-spacing: 0.1em;
+  letter-spacing: var(--size-letter-spacing);
   color: var(--color-black);
   opacity: 0;
 }
@@ -98,4 +114,46 @@ button {
 
 .select:focus {
   outline: solid 1px var(--color-orange);
+}
+
+/* Products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+}
+
+.product {
+  position: relative;
+  width: var(--size-product);
+  height: var(--size-product);
+}
+
+.product__img {
+  width: 100%;
+  height: 100%;
+}
+
+.product__price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0.5em 0;
+  margin: 0;
+  background-color: var(--color-orange-transparent);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--size-letter-spacing);
+  color: var(--color-black);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.product:hover .product__price {
+  transform: translateY(0);
+  opacity: 1;
 }
