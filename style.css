@@ -180,6 +180,12 @@ ul {
   background-color: var(--color-orange);
   font-size: calc(var(--size-arrow-up) * 3 / 4);
   color: white;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.arrow-up--hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* For screen width below 48rem */

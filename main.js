@@ -85,3 +85,18 @@ function sortProducts(products, criteria) {
   const container = document.querySelector('.products');
   container.append(...sorted);
 }
+
+// Handle click on arrow-up button
+const arrowUp = document.querySelector('.arrow-up');
+arrowUp.addEventListener('click', () =>
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+);
+
+// Show arrow-up button when scrolling down
+addEventListener('scroll', () => {
+  if (window.scrollY > window.innerHeight / 3) {
+    arrowUp.classList.remove('arrow-up--hidden');
+  } else {
+    arrowUp.classList.add('arrow-up--hidden');
+  }
+});
