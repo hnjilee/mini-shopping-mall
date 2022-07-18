@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "name": "shoes3",
+      "category": "shoes",
+      "price": 38000,
+      "img": "images/products/shoes3.png"
+    },
+    {
+      "name": "top4",
+      "category": "top",
+      "price": 49000,
+      "img": "images/products/top4.png"
+    },
+    {
+      "name": "top1",
+      "category": "top",
+      "price": 19000,
+      "img": "images/products/top1.png"
+    },
+    {
+      "name": "bag1",
+      "category": "bag",
+      "price": 38000,
+      "img": "images/products/bag1.png"
+    },
+    {
+      "name": "top2",
+      "category": "top",
+      "price": 29000,
+      "img": "images/products/top2.png"
+    },
+    {
+      "name": "bottom2",
+      "category": "bottom",
+      "price": 47000,
+      "img": "images/products/bottom2.png"
+    },
+    {
+      "name": "bag2",
+      "category": "bag",
+      "price": 26000,
+      "img": "images/products/bag2.png"
+    },
+    {
+      "name": "top3",
+      "category": "top",
+      "price": 39000,
+      "img": "images/products/top3.png"
+    },
+    {
+      "name": "shoes2",
+      "category": "shoes",
+      "price": 46000,
+      "img": "images/products/shoes2.png"
+    },
+    {
+      "name": "bottom3",
+      "category": "bottom",
+      "price": 54000,
+      "img": "images/products/bottom3.png"
+    },
+    {
+      "name": "bottom5",
+      "category": "bottom",
+      "price": 37000,
+      "img": "images/products/bottom5.png"
+    },
+    {
+      "name": "top5",
+      "category": "top",
+      "price": 79000,
+      "img": "images/products/top5.png"
+    },
+    {
+      "name": "bottom1",
+      "category": "bottom",
+      "price": 47000,
+      "img": "images/products/bottom1.png"
+    },
+    {
+      "name": "shoes1",
+      "category": "shoes",
+      "price": 27000,
+      "img": "images/products/shoes1.png"
+    },
+    {
+      "name": "bottom4",
+      "category": "bottom",
+      "price": 29000,
+      "img": "images/products/bottom4.png"
+    },
+    {
+      "name": "shoes4",
+      "category": "shoes",
+      "price": 23000,
+      "img": "images/products/shoes4.png"
+    }
+  ]
+}
