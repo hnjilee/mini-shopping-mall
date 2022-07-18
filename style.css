@@ -15,7 +15,9 @@
   --weight-light: 300;
 
   /* Size */
+  --size-border-radius: 8px;
   --size-logo: 12rem;
+  --size-btn: 5rem;
 }
 
 * {
@@ -23,8 +25,17 @@
   text-align: center;
 }
 
-body {
+body,
+button,
+select {
   font-family: 'Lato', sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 /* Logo */
@@ -33,4 +44,58 @@ body {
   height: var(--size-logo);
   margin: 2em 0;
   border-radius: 50%;
+}
+
+/* Buttons & Select */
+.btns-and-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  position: relative;
+  width: var(--size-btn);
+  height: var(--size-btn);
+  margin: 0 0.25em;
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-beige);
+}
+
+.btn__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  letter-spacing: 0.1em;
+  color: var(--color-black);
+  opacity: 0;
+}
+
+.btn:hover .btn__icon {
+  opacity: 0.1;
+}
+
+.btn:hover .btn__name {
+  opacity: 1;
+}
+
+/* Select */
+.select {
+  padding: 0.5em;
+  margin: 0 1em;
+  border: solid 1px var(--color-orange);
+  border-radius: var(--size-border-radius);
+  outline: none;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+}
+
+.select:focus {
+  outline: solid 1px var(--color-orange);
 }
