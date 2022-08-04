@@ -31,7 +31,9 @@
 - JSON으로부터 데이터를 받아 상품들을 보여줌
 
 - 버튼 클릭 시 해당 카테고리의 상품들만 필터링
+
   ![filter](https://user-images.githubusercontent.com/104768346/182789827-fb223564-90ce-4304-8d00-9d7b04e2dbca.gif)
 
 - 선택된 옵션에 따라 가격 기준으로 상품 정렬
+
   ![sort](https://user-images.githubusercontent.com/104768346/182789849-8de6f6ea-16e2-46cb-b17e-6521f2d36936.gif)
